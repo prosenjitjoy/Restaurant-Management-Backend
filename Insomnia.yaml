@@ -1,0 +1,782 @@
+_type: export
+__export_format: 4
+__export_date: 2023-07-09T03:27:22.442Z
+__export_source: insomnia.desktop.app:v2023.4.0
+resources:
+  - _id: req_e3f02a57654a41a48cb7fb9952deddf6
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688873099941
+    created: 1688873021120
+    url: localhost:5000/invoices/f37c84ed-db5b-47da-8a94-1471fe713cb0
+    name: Delete Invoice By ID
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1688873021120
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    parentId: null
+    modified: 1688762412637
+    created: 1688762412637
+    name: Restaurant Management Backend
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_2d427c9d7afb4b9b94bc0a06a07fbcf7
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688870701602
+    created: 1688864444728
+    url: localhost:5000/invoices/f37c84ed-db5b-47da-8a94-1471fe713cb0
+    name: Update Invoice By ID
+    description: ""
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"payment_status": "PAID"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1688864444728
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_0d0ca7a71407494abe65453669779ea4
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688868351499
+    created: 1688864409536
+    url: localhost:5000/invoices/f37c84ed-db5b-47da-8a94-1471fe713cb0
+    name: Get Invoice By ID
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1688864409536
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_094162c755604c22b01fe19eec44998d
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688873055494
+    created: 1688864389103
+    url: localhost:5000/invoices
+    name: Create Invoice
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"order_id": "14bf09c0-b171-4679-a3f2-2e3d05685739",
+        	"payment_method": "CASH"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1688864389103
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_9872894635694a0891da74e78f889944
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688864475477
+    created: 1688864378163
+    url: localhost:5000/invoices
+    name: Get Invoices
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1688864378163
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_a49c8f45d85c4bb0a83be456e66056b8
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688857654645
+    created: 1688857488899
+    url: localhost:5000/orderItems/order/7ca03e75-295b-434e-b16b-afb97b358d5a
+    name: Get Order Items By Order
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1688857488899
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ec6f598c213a41218fe1797c2197a8bf
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688873007109
+    created: 1688872958403
+    url: localhost:5000/orderItems/e9040cde-8082-49ac-a10f-8f35b73a8f87
+    name: Delete OrderItem By ID
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1688813019914
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7b1c78624acd49a9aa52f255778e2f25
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688857376889
+    created: 1688768550929
+    url: localhost:5000/orderItems/a58e46f3-85c8-4717-a42d-51d3f8652da7
+    name: Update OrderItem By ID
+    description: ""
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"quantity": 2
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1688768550929
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_5de6e58393dd4d469eae6c2fb820653d
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688857057784
+    created: 1688768533769
+    url: localhost:5000/orderItems/a58e46f3-85c8-4717-a42d-51d3f8652da7
+    name: Get OrderItem By ID
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1688768533769
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_bad8237f591f4e4a96fc576675088b38
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688872897672
+    created: 1688768504313
+    url: localhost:5000/orderItems
+    name: Create OrderItem
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"table_id": "6731499c-0774-4989-be3c-45010e397ea0",
+        	"order_items": [
+        		{
+        			"food_id": "3efb7d61-2671-4be9-9cea-4816a56de2d3",
+        			"quantity": 10
+        		},
+        		{
+        			"food_id": "ae61b485-7272-46e1-a590-76024aeec013",
+        			"quantity": 20
+        		}
+        	]
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1688768504313
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_bd10b23f1f234a0b80c5b96e646d8ccf
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688768677200
+    created: 1688768493324
+    url: localhost:5000/orderItems
+    name: Get OrderItems
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1688768493324
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_252ef07a3ff04470977af305c4b7c83b
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688872818853
+    created: 1688872771011
+    url: localhost:5000/orders/0964a16d-6c27-49bd-b193-8333f6b988bd
+    name: Delete Order By ID
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1688767766087
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_23c4a753a60b4040a5a479555a2158bb
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688855669970
+    created: 1688767038850
+    url: localhost:5000/orders/0964a16d-6c27-49bd-b193-8333f6b988bd
+    name: Update Order By ID
+    description: ""
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"table_id": "05a8b2a4-fa4f-441a-a080-3e18bb24bf69"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1688767038850
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ad9c984a503a4ef6a164d428bd096b13
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688857587751
+    created: 1688767023017
+    url: localhost:5000/orders/7ca03e75-295b-434e-b16b-afb97b358d5a
+    name: Get Order By ID
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1688767023017
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_97142923e8984d22a3acc6fca7e3541e
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688855568682
+    created: 1688767011091
+    url: localhost:5000/orders
+    name: Create Order
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"table_id": "0043d0b3-399a-48c0-bf33-a57010b83073"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1688767011091
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b9461a93bc6e4e69949134a23062c613
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688767074382
+    created: 1688766980270
+    url: localhost:5000/orders
+    name: Get Orders
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1688766980270
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_9741f3a6bea8416ea0be7a0666e5ca1f
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688872711246
+    created: 1688872620546
+    url: localhost:5000/foods/11645d09-6c39-41aa-8b06-964f88ac7f8d
+    name: Delete Food By ID
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1688765811087.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4bc071610fe54bf09131ba7d6194aab9
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688854580642
+    created: 1688764641905
+    url: localhost:5000/foods/ae61b485-7272-46e1-a590-76024aeec013
+    name: Update Food By ID
+    description: ""
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"unit_price": 20
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1688764641905
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7fe9e937256e4df8ac7616b94e203a1e
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688854529750
+    created: 1688764623313
+    url: localhost:5000/foods/ae61b485-7272-46e1-a590-76024aeec013
+    name: Get Food By ID
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1688764623313
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_1a31693b4b054de1823dfb2586a509b4
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688872674867
+    created: 1688764602177
+    url: localhost:5000/foods
+    name: Create Food
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: >-
+        {
+        	"name": "sandwich",
+        	"unit_price": 10,
+        	"food_image": "https://media.cnn.com/api/v1/images/stellar/prod/220428140436-04-classic-american-hamburgers.jpg",
+        	"menu_id": "02f5cfa1-c7a8-475e-83ef-0fdb1e9b56aa"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1688764602177
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b0a449b6e68f423293d64c42d318b924
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688764670826
+    created: 1688764593364
+    url: localhost:5000/foods
+    name: Get Foods
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1688764593364
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_3f118f4c05ee42e9855b6020ce08e28a
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688872565854
+    created: 1688872472138
+    url: localhost:5000/menus/c4c45133-5e72-4673-8962-372a6b5a2b93
+    name: Delete Menu By ID
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1688764191274.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f2f769bb61b54d4eaaabe0fa0fe6c54f
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688854324055
+    created: 1688763789185
+    url: localhost:5000/menus/02f5cfa1-c7a8-475e-83ef-0fdb1e9b56aa
+    name: Update Menu By ID
+    description: ""
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"category": "foods"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1688763789185
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_47cc5edd77b144e681513d429e7265e4
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688854309589
+    created: 1688763773873
+    url: localhost:5000/menus/02f5cfa1-c7a8-475e-83ef-0fdb1e9b56aa
+    name: Get Menu By ID
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1688763773873
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_9a6b2a896a89472fbc9deb23dcf61ed2
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688872540199
+    created: 1688763753145
+    url: localhost:5000/menus
+    name: Create Menu
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "top menu",
+        	"category": "featured food"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1688763753145
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_a2d0441a1ef542d8b274455ca5bdaf56
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688763822254
+    created: 1688763737834
+    url: localhost:5000/menus
+    name: Get Menus
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1688763737834
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e490ed43983747e682956852e7f809f8
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688872322025
+    created: 1688872290379
+    url: localhost:5000/tables/05a8b2a4-fa4f-441a-a080-3e18bb24bf69
+    name: Delete Table By ID
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1688763580169.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e2447a0d88d34c35b96bb2e0d663e709
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688872346151
+    created: 1688763422505
+    url: localhost:5000/tables/0043d0b3-399a-48c0-bf33-a57010b83073
+    name: Update Table By ID
+    description: ""
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"number_of_guest": 6
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1688763422505
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e3c1cc72754c497298abf035cc4fcba7
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688872399008
+    created: 1688763356796
+    url: localhost:5000/tables/0043d0b3-399a-48c0-bf33-a57010b83073
+    name: Get Table By ID
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1688763389650.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_eab5f13ca48542c9ad6470bac5c1eef0
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688872280703
+    created: 1688762887449
+    url: localhost:5000/tables
+    name: Create Table
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"table_number": 3,
+        	"number_of_guest": 3
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1688763128740.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7a9517f496ce44598c9b677fb520c4f9
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688872273693
+    created: 1688762808973
+    url: localhost:5000/tables
+    name: Get Tables
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1688762867830
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_eee7100f80d5b6882102abdf5205ed28eb31d181
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688762412639
+    created: 1688762412639
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1688762412639
+    _type: environment
+  - _id: jar_eee7100f80d5b6882102abdf5205ed28eb31d181
+    parentId: wrk_8b6e2044d11f4e1a8134b1638b2fe211
+    modified: 1688762412641
+    created: 1688762412641
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
